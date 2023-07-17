@@ -7,7 +7,7 @@ builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>
     {
-        policy.WithOrigins("OriginPolicy", "http://localhost:3000").AllowAnyMethod().AllowAnyHeader();
+        policy.WithOrigins("OriginPolicy", "http://todo.werntzdomain.com", "http://localhost:3000").AllowAnyMethod().AllowAnyHeader();
     });
 });
 
